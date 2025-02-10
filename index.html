@@ -64,30 +64,22 @@
         .service-item:hover {
             transform: scale(1.05);
         }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
+        .contact-section {
+            text-align: center;
+            padding: 50px 20px;
         }
-        .contact-form input, .contact-form textarea {
-            width: 80%;
-            max-width: 400px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
+        .email-link {
+            display: inline-block;
+            padding: 12px 20px;
             background-color: #ff9800;
             color: white;
-            border: none;
-            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 18px;
             border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
+            font-weight: bold;
+            transition: background 0.3s;
         }
-        .contact-form button:hover {
+        .email-link:hover {
             background-color: #e68900;
         }
         footer {
@@ -124,8 +116,8 @@
                 <p>Top-of-the-line PA systems for any event, from conferences to small live performances.</p>
             </div>
             <div class="service-item">
-                <h3>Music & Party Setup</h3>
-                <p>Basic music and party setup with a PA system and small lightings setup, perfect for small gatherings and celebrations.</p>
+                <h3>DJ & Party Setup</h3>
+                <p>Basic music and party setup with a PA system and two small lights, perfect for small gatherings and celebrations.</p>
             </div>
             <div class="service-item">
                 <h3>Sound Engineering</h3>
@@ -138,18 +130,11 @@
         </div>
     </section>
 
-    <section id="contact">
-<!--        <h2>Contact Us</h2>
-        <p>Get in touch to book our services or ask any questions.</p>
-        <div class="contact-form">
-            <form action="send_mail.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div> -->
-    </section>
+<!--    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please reach out to us via email:</p>
+        <a class="email-link" href="mailto:your-email@example.com">Send Email</a>
+    </section> -->
 
     <footer>
         <p>&copy; 2025 A&N Events. All rights reserved.</p>
