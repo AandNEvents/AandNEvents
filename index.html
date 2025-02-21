@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A&N Events - Your trusted event solutions provider, specializing in PA systems and parties.">
+    <title>A&N Events</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 30px 0;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center; /* Center the navbar on larger screens */
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff9800;
+            color: white;
+            border-radius: 5px;
+        }
+        .menu-button {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .service-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            min-width: 250px;
+            transition: transform 0.3s;
+        }
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Original styles for the email button */
+        .email-link {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #ff9800;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        .email-link:hover {
+            background-color: #e68900;
+        }
+
+        footer {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                text-align: center;
+            }
+            .nav-links a {
+                display: block;
+                padding: 10px;
+                width: 100%;
+            }
+            .menu-button {
+                display: block;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .service-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A&N Events</h1>
+        <p>Making events simple again</p>
+    </header>
+
+    <nav>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#info">Information</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="about">
+        <h2>Welcome to A&N Events</h2>
+        <p>We provide high-quality PA systems for small to medium event sizes, ensuring professional sound and seamless execution.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-item">
+                <h3>PA System Rentals</h3>
+                <p>Top-of-the-line PA systems for any event, from conferences to small live performances.</p>
+            </div>
+            <div class="service-item">
+                <h3>DJ & Party Setup</h3>
+                <p>Basic music and party setup with a PA system and two small lights, perfect for small gatherings and celebrations.</p>
+            </div>
+            <div class="service-item">
+                <h3>Sound Engineering</h3>
+                <p>Expert sound setup and operation for flawless event audio.</p>
+            </div>
+            <div class="service-item">
+                <h3>Outdoor Events</h3>
+                <p>PA system and lighting setup tailored for small to medium-sized outdoor gatherings.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <h2>How Many People Can Our PA System Cover?</h2>
+        <p>The coverage of our PA system depends on how it's being used and the surrounding environment. Below are general estimates:</p>
+        <h3>For Background Music (Minimal Speech Clarity Needed):</h3>
+        <p>Indoors: Up to 200 people</p>
+        <p>Outdoors: Up to 100 people</p>
+        <h3>For Clear Speaking & Announcements:</h3>
+        <p>Indoors (Quiet Environment – Conferences, Meetings, Churches): Up to 125 people</p>
+        <p>Indoors (Noisy Environment – Parties, Weddings, Live Music Venues): Up to 75 people</p>
+        <p>Outdoors (Quiet Environment – Speeches, Ceremonies, Community Gatherings): Up to 150 people</p>
+        <p>Outdoors (Noisy Environment – Street Performances, Markets, Festivals): Up to 75 people</p>
+        <p>If you're unsure whether our system meets your needs, feel free to <a href="mailto:AandNEvents@outlook.com">email us</a> for guidance!</p>
+        <h2>What do we need?</h2>
+        <p>The main thing we require for your event to run smoothly is working plug sockets within a maximum of 10m from where you want the PA System.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please reach out to us via email:</p>
+        <a class="email-link" href="mailto:AandNEvents@outlook.com">Send Email</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 A&N Events. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
